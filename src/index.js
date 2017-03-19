@@ -174,7 +174,7 @@ export default class TimeAgo extends Component<DefaultProps, Props, void> {
 
     return (
       <Komponent {...passDownProps} title={passDownTitle}>
-        {this.props.formatter(value, unit, suffix, then, nextFormatter)}
+        {this.props.formatter(value, unit, suffix, then, nextFormatter).toUpperCase()}
       </Komponent>
     )
   }
